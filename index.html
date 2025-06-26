@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zulz Store - Produk Digital</title>
+  <style>
+    :root {
+      --bg: #111;
+      --text: #fff;
+      --card-bg: #1e1e1e;
+    }[data-theme="light"] {
+  --bg: #f0f0f0;
+  --text: #000;
+  --card-bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  border: none;
+  border-radius: 5px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.product-card {
+  background: var(--card-bg);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+h2 {
+  border-bottom: 1px solid #555;
+}
+
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Ganti Tema</button>
+  <header>
+    <h1>Zulz Store - Produk Digital</h1>
+    <p>Jualan VPS dan Panel Private/Public</p>
+  </header>  <div class="product-card">
+    <h2>Ready VPS DigitalOcean High Quality ⛈️</h2>
+    <ul>
+      <li>Ram 2 Core 2 : Rp20.000</li>
+      <li>Ram 4 Core 2 : Rp30.000</li>
+      <li>Ram 8 Core 2 : Rp40.000</li>
+      <li>Ram 8 Core 4 : Rp45.000</li>
+      <li>Ram 16 Core 4 : Rp50.000</li>
+      <li>Ram 32 Core 8 : Rp65.000</li>
+    </ul>
+    <p><strong>Benefit Pembelian:</strong></p>
+    <ul>
+      <li>High Quality, Awet Dan Stabil</li>
+      <li>Free Install Panel Pterodactyl</li>
+      <li>Free Install Thema (Ram 8 - 32)</li>
+      <li>Free Request Domain Panel</li>
+      <li>Free Request Region, OS, Versi</li>
+      <li>Free Egg Bot Samp / WhatsApp</li>
+      <li>Full Akses VPS, Aktif 25-30 Hari</li>
+      <li>Garansi 20 Hari (1x Replace)</li>
+    </ul>
+  </div>  <div class="product-card">
+    <h2>𝙋𝘼𝙉𝙀𝙇 𝙋𝙐𝘽𝙇𝙄𝘾</h2>
+    <ul>
+      <li>RAM 1 GB = 1K</li>
+      <li>RAM 2 GB = 2K</li>
+      <li>RAM 3 GB = 3K</li>
+      <li>RAM 4 GB = 4K</li>
+      <li>RAM 5 GB = 5K</li>
+      <li>RAM UNLI = 8K 5K</li>
+    </ul>
+    <p><strong>Panel Fresh:</strong></p>
+    <ul>
+      <li>VPS R 16 C4</li>
+      <li>RESELLER PANEL = 5K 6K</li>
+      <li>ADMIN PANEL = 10K 7K</li>
+      <li>PATNER = 15K 10K</li>
+      <li>OWNER = 20K 15K</li>
+      <li>TANGAN KANAN = 25K 20K</li>
+    </ul>
+    <p><strong>KEUNTUNGAN:</strong></p>
+    <ul>
+      <li>VVIP = 30K 25K</li>
+      <li>MASUK GRUP CHAT PRIVATE</li>
+      <li>PENJUALAN MENINGKAT</li>
+      <li>JADI PRIORITAS ADMIN</li>
+      <li>NOTE : KALAU KURANG PAHAM TANYA ADMIN</li>
+    </ul>
+  </div>  <div class="product-card">
+    <h2>𝙋𝘼𝙉𝙀𝙇 𝙋𝙍𝙄𝙑𝘼𝙏𝙀</h2>
+    <ul>
+      <li>RAM 1GB = 2K</li>
+      <li>RAM 2 GB = 4K</li>
+      <li>RAM 3 GB = 6K</li>
+      <li>RAM 4 GB = 8K</li>
+      <li>RAM 5 GB = 10K</li>
+      <li>RAM UNLI = 12K 10K</li>
+      <li>RESELLER PANEL = 30K 25K</li>
+    </ul>
+    <p><strong>KEUNTUNGAN:</strong></p>
+    <ul>
+      <li>VPS RAM 32 GB CORE 8</li>
+      <li>VPS SUPER KENCANG</li>
+      <li>TEMA ELYSIUM KEREN</li>
+      <li>ANTI DELAY</li>
+      <li>ANTI INTIP</li>
+      <li>ANTI CURI-CURI SC</li>
+      <li>BERGARANSI</li>
+      <li>SERVER NO LAG</li>
+      <li>PANEL LU AMAN 100%</li>
+    </ul>
+  </div>  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      if (html.getAttribute('data-theme') === 'zulz') {
+        html.removeAttribute('data-theme');
+      } else {
+        html.setAttribute('data-theme', 'zulz');
+      }
+    }
+  </script></body>
+</html>
