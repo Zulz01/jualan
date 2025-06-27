@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zulz Store - Produk Digital</title>
+  <style>
+    :root {
+      --bg: #111;
+      --text: #fff;
+      --card-bg: #1e1e1e;
+      --accent: #25d366;
+    }[data-theme="light"] {
+  --bg: #f0f0f0;
+  --text: #000;
+  --card-bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  border: none;
+  border-radius: 5px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.product-card {
+  background: var(--card-bg);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+h2 {
+  border-bottom: 1px solid #555;
+}
+
+.wa-button {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="kalo memang dah sayng.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio><button class="theme-toggle" onclick="toggleTheme()">Ganti Tema</button>
+
+  <header>
+    <h1>Zulz Store - Produk Digital</h1>
+    <p>Jualan VPS dan Panel Private/Public</p>
+  </header>  <div class="product-card">
+    <img src="zulz_devolover.jpg" alt="Zulz Devolover">
+    <h2>Ready VPS Digital Ocean</h2>
+    <p>Ram 2 Core 2 : Rp20.000<br>
+       Ram 4 Core 2 : Rp30.000<br>
+       Ram 8 Core 2 : Rp40.000<br>
+       Ram 8 Core 4 : Rp45.000<br>
+       Ram 16 Core 4 : Rp50.000<br>
+       Ram 32 Core 8 : Rp65.000</p>
+    <p><strong>Benefit Pembelian:</strong><br>
+       - High Quality, Awet Dan Stabil<br>
+       - Free Install Panel Pterodactyl<br>
+       - Free Install Thema (Ram 8 - 32)<br>
+       - Free Request Domain Panel, Region, OS, Versi<br>
+       - Free Egg Bot Samp & WA<br>
+       - Full Akses VPS<br>
+       - Masa Aktif 25-30 Hari, Garansi 20 Hari (1x Replace)</p>
+  </div>  <div class="product-card">
+    <img src="zulz_devolover.jpg" alt="Zulz Devolover">
+    <h2>Panel Public & Private</h2>
+    <p>Public:<br>
+       RAM 1GB = 1K - RAM UNLI = 8K 5K<br>
+       RESELLER PANEL = 5K 6K, ADMIN PANEL = 10K 7K<br>
+       PATNER = 15K 10K, OWNER = 20K 15K<br>
+       TANGAN KANAN = 25K 20K</p>
+    <p>Private:<br>
+       RAM 1GB = 2K - RAM UNLI = 12K 10K<br>
+       RESELLER PANEL = 30K 25K</p>
+    <p><strong>Keuntungan:</strong><br>
+       - VPS RAM 32 GB CORE 8, SUPER KENCANG<br>
+       - Tema Elysium, Anti Delay, Anti Intip<br>
+       - Server No Lag, Bergaransi</p>
+  </div>  <div class="product-card">
+    <img src="zulz_devolover.jpg" alt="Zulz Devolover">
+    <h2>Jasa BUG & Membership</h2>
+    <p>JASA BUG : 2K / Nomor<br>
+       MURID BUG : 25K / Bulan<br>
+       RESELLER BUG : 35K / Bulan<br>
+       PATNER BUG : 45K / Bulan</p>
+    <p><strong>Benefit:</strong><br>
+       - Murid: Bug repper, teman, guru, ortu<br>
+       - Reseller: Bisa open murbug<br>
+       - Patner: Bisa open reseller & murbug</p>
+  </div>  <div class="product-card">
+    <img src="zulz_devolover.jpg" alt="Zulz Devolover">
+    <h2>MURSC PRIVATE - 20K</h2>
+    <p><strong>Keuntungan:</strong><br>
+       - Diajarin Buat Script (Sampai Dev)<br>
+       - Dapat Base WA/Tele, Function Bug Gacor<br>
+       - Tutorial Rakit Function, Fix Error<br>
+       - Dapat Code DB/Security, Panel Run Script<br>
+       - Dapat Button WA Bisnis, Code AutoJoin Channel</p>
+    <p><strong>Nego:</strong> Di atas 14K<br>
+       <strong>DP:</strong> Minimal 5K</p>
+  </div><a class="wa-button" href="https://wa.me/6285935340806" target="_blank">Chat WhatsApp</a>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem("theme", "dark");
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    window.onload = function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    };
+  </script></body>
+</html>
